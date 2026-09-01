@@ -142,4 +142,4 @@ Este proyecto está bajo la licencia MIT.
 
 ## 🙌 Autor
 
-Desarrollado con ❤️ por [Albert Castro - BeruzDev](https://github.com/BeruzDev)
+Desarrollado con ❤️ por [Juan Durango - juanmcodes](https://github.com/juanmcodes)
