@@ -1,0 +1,43 @@
+.links-window{
+	width: 100%;
+	height: 100dvh;
+	position: relative;
+	
+	.buttons-section{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between; 
+	}
+
+	.bento-section{
+		display: grid;
+		align-content: flex-start;
+		grid-template-columns: 50% 50%;
+		height: 100vh;
+		width: 100%;
+		max-height: calc(100vh - 55px - 150px);
+		overflow-y: auto;
+		overflow-x: hidden;
+		box-sizing: border-box;
+	}
+
+	.bento-section::-webkit-scrollbar{
+		width: 8px;
+	}
+	.bento-section::-webkit-scrollbar-track {
+		background: var(--root-base);
+	}
+	
+	.bento-section::-webkit-scrollbar-thumb {
+		background-color: var(--component-base);
+		border-radius: 4px; 
+	}
+}
+
+@media (max-width: 750px) {
+  .links-window .bento-section {
+    grid-template-columns: 100%;
+  }
+}

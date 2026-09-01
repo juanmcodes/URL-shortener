@@ -1,0 +1,28 @@
+#input-search{
+	position: relative;
+	color: var(--secondary-font);
+	display: flex;
+	align-items: center;
+
+	.search-icon{
+		position: absolute;
+		left: 20px;
+		color: var(--secondary-font);
+	}
+
+	#input{
+		padding: 10px 35px 10px 40px;
+		margin: 5px;
+		border-radius: 5px;
+		border: 0;
+		outline: 0;
+		color: var(--primary-font);
+		background-color: transparent;
+		font-size: 14px;
+		box-shadow: 0 0 0 0.2px var(--secondary-font);
+	}
+
+	#input:focus{
+		box-shadow: 0 0 0 0.8px var(--secondary-font);
+	}
+}

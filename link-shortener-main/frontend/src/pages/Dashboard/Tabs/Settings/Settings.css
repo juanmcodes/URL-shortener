@@ -1,0 +1,156 @@
+#settings-window{
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: 70% auto;
+	padding: 0 5%;
+	position: relative;
+
+	.user-section{
+		background-color: var(--opacity-base);
+		box-shadow: 0 0 0 0.2px var(--secondary-font);
+		border-radius: 10px;
+		margin: 20px;
+		padding: 20px;
+		
+		.title{
+			color: var(--primary-font);
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+
+		.info-section{
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+
+			.data-section {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				gap: 5px;
+
+					.label{
+						font-size: 18px;
+						color: var(--secondary-font);
+						margin-bottom: 10px;
+					}
+			
+					.input-section{
+						display: flex;
+						align-items: center;
+						position: relative;
+						
+						.input{
+							font-family: monospace;
+							font-size: 16px;
+							width: 100%;
+							color: var(--primary-font);
+							background-color: var(--component-base);
+							border: 0;
+							border-radius: 5px;
+							box-shadow: 0 0 0 0.2px var(--secondary-font);
+							padding: 12px;
+							pointer-events: none;
+							cursor: default;
+						}
+
+						.input:focus{
+							border: 0;
+							outline: 0;
+						}
+
+							.lock-icon{
+								color: var(--primary-font);
+								position: absolute;
+								right: 15px;
+							}
+	
+							.lock-icon:hover{
+								color: var(--error);
+							}
+					}
+			}
+		}
+
+		.subtitle{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			color: var(--secondary-font);
+			font-size: 15px;
+			margin-top: 25px;
+		}
+	}
+
+	.account-section{
+		background-color: var(--opacity-base);
+		box-shadow: 0 0 0 0.2px var(--secondary-font);
+		border-radius: 10px;
+		margin: 20px;
+		padding: 20px;
+
+		.title{
+			color: var(--primary-font);
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+
+		.manage-section{
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+
+			.export-section{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				gap: 5px;
+
+				.label{
+					font-size: 18px;
+					color: var(--secondary-font);
+					margin-bottom: 10px;
+				}
+			}
+
+			.delete-user-section{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				gap: 5px;
+
+				.label{
+					font-size: 18px;
+					color: var(--secondary-font);
+					margin-bottom: 10px;
+				}
+			}
+		}
+
+		.subtitle{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			color: var(--secondary-font);
+			font-size: 15px;
+			margin-top: 25px;
+		}
+	}
+}
+
+@media (max-width: 750px){
+	#settings-window{
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+
+		.user-section{
+			margin-bottom: 5px;
+		}
+
+		.account-section{
+			margin-top: 5px;
+		}
+	}
+}

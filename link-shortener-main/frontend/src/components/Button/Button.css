@@ -1,0 +1,376 @@
+.button {
+  display: flex;
+  align-items: center;
+  color: var(--detail-1);
+  background-color: transparent;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  border: 0;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.crafter-button {
+  font-size: 30px;
+  margin: 0 20px;
+}
+.crafter-button:hover {
+  cursor: pointer;
+  color: var(--detail-2);
+  transform: scale(1.3);
+}
+
+.navbar-button {
+  font-size: 25px;
+}
+
+.navbar-button:hover {
+  cursor: pointer;
+  color: var(--detail-2);
+  animation: shake 0.5s ease-in-out
+}
+
+.get-started {
+  color: var(--secondary-font);
+  border: 1px solid var(--detail-1);
+  flex-direction: row-reverse;
+  border-radius: 5px;
+  padding: 8px;
+  gap: 5px;
+}
+
+.get-started:hover {
+  cursor: pointer;
+  border-color: var(--detail-2);
+	animation: shake 0.5s ease-in-out
+}
+
+.logout{
+  color: var(--secondary-font);
+  border: 1px solid var(--detail-1);
+  flex-direction: row-reverse;
+  border-radius: 5px;
+  padding: 8px;
+  gap: 5px;
+
+  .icon{
+    font-size: 20px;
+  }
+}
+
+.logout:hover{
+  cursor: pointer;
+  border-color: var(--detail-2);
+	animation: shake 0.5s ease-in-out
+}
+
+.button-text {
+  font-family: system-ui;
+	font-weight: 600;
+	transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.login-button{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  color: var(--primary-font);
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  box-shadow: 0 0 0 0.2px var(--secondary-font);
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 10px;
+
+  .icon{
+    font-size: 20px;
+  }
+}
+
+.login-button:hover{
+  background-color: var(--component-base);
+  cursor: pointer;
+}
+
+.windows{
+  border-radius: 0;
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+  color: var(--secondary-font);
+
+  .icon{
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  }
+}
+
+.windows:hover{
+  cursor: pointer;
+  color: var(--primary-font);
+  
+}
+
+.windows:hover .icon{
+  transform: rotate(180deg) scale(1.1);
+  color: var(--detail-2);
+}
+
+.windows:hover .button-text{
+  transform: scale(1.1);
+}
+
+.active-button {
+  color: var(--primary-font);
+  
+  .icon{
+    color: var(--detail-1);
+  }
+}
+
+.create-link{
+  height: 36px ;
+  border-radius: 5px;
+  padding: 0 10px;
+  display: flex;
+  gap: 8px;
+  color: var(--primary-font);
+  background-color: var(--component-base);
+  font-size: 14px;
+
+  .icon{
+    color: var(--detail-1);
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  }
+}
+
+.create-link:hover{
+  cursor: pointer;
+  /* background-color: var(--opacity-base); */
+}
+
+.create-link:hover .icon{
+  transform: rotate(180deg) scale(1.1);
+  color: var(--detail-2);
+}
+
+.create-link .icon:active{
+  color: var(--detail-1);
+}
+
+.close{
+  font-size: 30px;
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  color: var(--secondary-font);
+}
+
+.close:hover{
+  cursor: pointer;
+  transform: rotate(180deg) scale(1.1);
+  color: var(--detail-2);
+}
+
+.close .icon:active{
+  color: var(--detail-1);
+}
+
+.create-shortLink{
+  height: 36px ;
+  border-radius: 5px;
+  padding: 0 10px;
+  display: flex;
+  gap: 8px;
+  color: var(--primary-font);
+  background-color: var(--component-base);
+  font-size: 14px;
+
+  .icon{
+    color: var(--detail-1);
+    transition: transform 0.6s ease, color 0.6s ease, background-color 0.6s ease;
+  }
+}
+
+.create-shortLink:hover{
+  cursor: pointer;
+}
+
+.create-shortLink:hover .icon{
+  transform: rotate(360deg) scale(1.1);
+  color: var(--detail-2);
+}
+
+.create-shortLink .icon:focus{
+  background-color: var(--opacity-base);
+}
+
+
+.cancel{
+  height: 36px ;
+  width: 80px;
+  border-radius: 5px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  color: var(--primary-font);
+  font-size: 14px;
+}
+
+.cancel:hover{
+  cursor: pointer;
+  background-color: var(--component-base);
+}
+
+.copy-link{
+  color: var(--primary-font);
+  font-size: 16px;
+}
+
+.copy-link:hover{
+  cursor: pointer;
+  color: var(--detail-2);
+  transform: scale(1.1);
+}
+
+.edit-link{
+  color: var(--primary-font);
+  font-size: 16px;
+}
+
+.edit-link:hover{
+  cursor: pointer;
+  color: var(--detail-2);
+  transform: scale(1.1);
+}
+
+.delete-link{
+  color: var(--primary-font);
+  font-size: 16px;
+}
+
+.delete-link:hover{
+  cursor: pointer;
+  color: var(--delete);
+  transform: scale(1.1);
+}
+
+.clear-button{
+  color: var(--primary-font);
+  font-size: 25px;
+  position: fixed;
+  left: 245px;
+}
+
+.clear-button:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.export{
+  display: flex;
+  justify-content: center;
+  color: var(--primary-font);
+  box-shadow: 0 0 0 0.2px var(--secondary-font);
+  background-color: var(--component-base);
+  gap: 10px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.export:hover{
+  background-color: var(--secondary-font);
+  cursor: pointer;
+}
+
+.export:hover .icon{
+  transform: scale(1.1);
+}
+
+.delete-user{
+  display: flex;
+  justify-content: center;
+  color: var(--primary-font);
+  background-color: var(--error);
+  gap: 10px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+  
+}
+
+.delete-user:hover{
+  background-color: #8f3838;
+  cursor: pointer;
+}
+
+.delete-user:hover .icon{
+  transform: scale(1.1);
+}
+
+.cancel-delete{
+  height: 36px ;
+  width: 80px;
+  border-radius: 5px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 0 0 0.2px var(--secondary-font);
+  color: var(--secondary-font);
+  font-size: 14px;
+  margin: 0;
+}
+
+.cancel-delete:hover{
+  cursor: pointer;
+  color: var(--primary-font);
+  background-color: var(--secondary-font);
+}
+
+.accept-delete{
+  height: 36px ;
+  width: 80px;
+  border-radius: 5px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 0 0 0.2px var(--secondary-font);
+  color: var(--secondary-font);
+  font-size: 14px;
+  margin: 0;
+
+}
+
+.accept-delete:hover{
+  cursor: pointer;
+  background-color: var(--opacity-base);
+  cursor: pointer;
+  color: var(--primary-font);
+  background-color: var(--secondary-font);
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+@media (max-width: 750px){
+  .crafter-button{
+    transform: rotate(90deg);
+  }
+
+  .login-button{
+    margin-bottom: 20px;
+  }
+}
